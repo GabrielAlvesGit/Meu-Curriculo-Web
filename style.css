@@ -1,0 +1,403 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color:#fff;
+    font-family: Arial;
+}
+.container{
+    /*Lembrete: estou mexendo dentro de toda a instrutura do container*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*Criando Largura e altura para borda ou margin*/
+    height: 100%; /*Largura*/
+    width: 100%; /*(Altura) sempre vai usar 100%*/
+    /*flex-flow: Coloca o conteúdo em coluna e não permite a quebra de linha*/
+    flex-flow: column nowrap;
+    /*justify-content: é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    justify-content: center;
+    /*align-items: controla o alinhamento dos itens(no caso todos o central, pois estamos usando no caontainer)*/
+    align-items: center;
+    /*(define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
+    align-content: stretch;
+
+    /*conteudo de stilização da pag. como: cores, efeitos*/
+}
+.linha{
+    /*Lembrete: Sempre vai ter que configura a linha para ter a quebra de box*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display:flex;
+    flex-flow:row nowrap;
+    width: 100%;
+}
+.coluna{
+    /*Lembrete: estou mexendo dentro do primeiro Box*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*border: Criando uma borda*/
+    border: 3px solid black;
+    /*Criando Largura e altura para borda*/
+    height: 250px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+}
+main{
+    width: 100%;
+    height: 30%;
+}
+div#q1{
+    /*Lembrete: Manipulação da imagem no id*/
+     /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    height: 150px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    /*background-image: importando a imagem da pasta img*/
+    background-image: url("img/universo.jpg" ) ;
+    /*Criando Largura e altura para box*/
+    border: 4px solid #000;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    margin: 0px;
+    
+    
+    /*conteudo de stilização da pag. como: cores, efeitos*/
+    /*-webkit-border-radius: Do lado ESQUERDO da box deixa um pouco aredondado*/
+    -webkit-border-radius: 0px 0px 6px 11px;
+    /*-webkit-border-radius: Do lado DIREITO da box deixa um pouco aredondado*/
+    border-radius: 0px 0px 6px 11px;
+}
+
+
+
+.colunasection{
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*border: Criando uma borda*/
+    border: 2px solid black;
+    /*Criando Largura e altura para box*/
+    height: 50%; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    /*align-items: controla o alinhamento dos itens(no caso todos o central, pois estamos usando no container)*/
+    /*(align-content: center; define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
+    align-content: center;
+    /*justify-content: é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    flex-flow: column nowrap;
+    /*Criando: crinado espaço da box de cima e dando um espaço entre as Box*/
+    margin: 1px; 
+    padding: 10px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+.colunasectionExProfi{
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*border: Criando uma borda*/
+    border: 2px solid black;
+    /*Criando Largura e altura para box*/
+    height: 254px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    /*align-items: controla o alinhamento dos itens(no caso todos o central, pois estamos usando no container)*/
+    /*(align-content: center; define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
+    align-content: center;
+    /*justify-content: é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    flex-flow: column nowrap;
+    /*Criando: crinado espaço da box de cima e dando um espaço entre as Box*/
+    margin: 1px; 
+    padding: 10px;
+    
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+.colunasectionobjetivo{
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    
+    /*border: Criando uma borda*/
+    border: 2px solid black;
+    /*Criando Largura e altura para box*/
+    height: 90px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    /*align-items: controla o alinhamento dos itens(no caso todos o central, pois estamos usando no container)*/
+    /*(align-content: center; define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
+    align-content: center;
+    /*justify-content: é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    flex-flow: column nowrap;
+    /*Criando: crinado espaço da box de cima e dando um espaço entre as Box*/
+    margin: 1px; 
+    padding: 10px;
+
+}
+section{
+    width: 100%;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.cabeçalhoinformaçõespessoais{
+    /*Lembrete: Criando cabeçario, Nome, endereço, idade etc..*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*Criando Largura e altura para box*/
+    height: 200px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    /*border: Criando uma borda*/
+    border: 3px solid #000;
+    align-items: center;
+    /*(align-content: center; define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
+    align-content: center;
+    /*justify-content: é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    justify-content: center;
+    flex-flow: column nowrap;
+    /*Criando: crinado espaço da box de cima e dando um espaço entre as Box*/
+    margin-top: 3px;
+    /*conteudo de stilização da pag. como: cores, efeitos*/
+    /*-webkit-border-radius: Do lado ESQUERDO da box deixa um pouco aredondado*/
+    -webkit-border-radius: 0px 0px 6px 11px;
+    /*-webkit-border-radius: Do lado DIREITO da box deixa um pouco aredondado*/
+    border-radius: 0px 0px 6px 11px;
+}
+
+.cabeçalhos{
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    /*Criando Largura e altura para box*/
+    height: 40px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    /*border: Criando uma borda*/
+    border: 2px solid #000;
+    align-items: center;
+    align-content: center;
+    /*(align-content: center; define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
+    align-content: center;
+    /*justify-content: é empregada para alinhar os elementos ao longo do eixo principal, cuja direção ( row ou column ) é definida a partir da propriedade flex-direction*/
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: 1px;
+    margin-top: 5px;
+    text-align: center;
+    /*Criando: crinado espaço da box de cima e dando um espaço entre as Box*/
+    
+    /*conteudo de stilização da pag. como: cores, efeitos*/
+    /*-webkit-border-radius: Do lado ESQUERDO da box deixa um pouco aredondado*/
+    -webkit-border-radius: 0px 0px 6px 11px;
+    /*-webkit-border-radius: Do lado DIREITO da box deixa um pouco aredondado*/
+    border-radius: 0px 0px 6px 11px; 
+}
+
+.colunasection2{
+    /*Lembrete: estou mexendo dentro do primeiro Box*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*border: Criando uma borda*/
+    border: 2px solid black;
+    /*Criando Largura e altura para borda*/
+    height: 250px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    flex-flow: column nowrap;
+    margin: 1px;
+    padding: 10px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.linha2{
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+.colunasection2 h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.flex{
+    width: 100%;
+    margin: 0px;
+}
+
+.colunasection3{
+    /*Lembrete: estou mexendo dentro do primeiro Box*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*border: Criando uma borda*/
+    border: 3px solid black;
+    /*Criando Largura e altura para borda*/
+    height: 250px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    flex-flow: column nowrap;
+    margin: 1px;
+    padding: 0px;
+    align-items: center;
+}
+
+.imglogo{
+    height: 40px;
+    width: 40px;
+
+}
+
+.logopequeno{
+    display: flex;
+    margin: 8px 5px;
+    justify-content: space-between;
+}
+.conteudo-texto p{
+    margin: 5px 5px;
+}
+
+
+.teste{
+height: 520px;
+width: 935px;
+border-radius: 20px;
+overflow: hidden;
+position:absolute ;
+left: 50%;
+}
+
+.navigation{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel{
+    width: 100%;
+    height: 100%;
+}
+.carosselborda{ 
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    background: #777;
+    color: white;
+    position: relative;
+    padding-bottom: 50px;
+}
+.carousel-inner{
+    height: 400px;
+    width: 100%;
+    
+}
+.container2carrossel{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 10px;
+}
+.overlay-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.overlay-image img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+button{
+    height: 30px;
+    width: 100px;
+    box-sizing: border-box;
+   
+}
+
+
+
+
+
+.linha3{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.colunasection3{
+    /*Lembrete: estou mexendo dentro do primeiro Box*/
+    /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
+    display: flex;
+    /*border: Criando uma borda*/
+    border: 2px solid black;
+    /*Criando Largura e altura para borda*/
+    height: 450px; /*Altura*/
+    width: 100%; /*(Largura) sempre vai usar 100%*/
+    flex-flow: column nowrap;
+    margin: 1px;
+    padding: 0px;
+    -webkit-border-radius: 12px 12px 12px 12px;
+    border-radius: 12px 12px 12px 12px;
+}
+.overlay-image{
+width: 100%;
+height: 100%;
+}
+
+.titulo-info {
+    color: #B1D4E0;
+    font-family: 'stat', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+@media(max-width: 1000px){
+    html, body {
+      width: 100%;
+      height: 100;
+      margin: auto;
+    }  
+  
+    .container {
+      width: 90%;
+    }
+  
+    .titulo {
+      font-size: 30px;
+    }
+  
+    .subtitulo {
+      font-size: 30px;
+    }
+  
+    .linha {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    .colunasection2{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+    }
+  }
