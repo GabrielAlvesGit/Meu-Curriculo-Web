@@ -27,7 +27,6 @@ body {
     /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
     display:flex;
     flex-flow:column nowrap;
-    width: 100%;
 }
 .coluna{
     /*Lembrete: estou mexendo dentro do primeiro Box*/
@@ -87,13 +86,14 @@ div#q1{
     -webkit-border-radius: 12px 12px 12px 12px;
     border-radius: 12px 12px 12px 12px;
 }
+
 .colunasectionExProfi{
     /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
     display: flex;
     /*border: Criando uma borda*/
     border: 2px solid black;
     /*Criando Largura e altura para box*/
-    height: 254px; /*Altura*/
+    /*Altura  height: 358px;*/
     width: 100%; /*(Largura) sempre vai usar 100%*/
     /*align-items: controla o alinhamento dos itens(no caso todos o central, pois estamos usando no container)*/
     /*(align-content: center; define a distribuição entre e ao redor dos items do conteúdo do eixo transversal de uma (caixa)box ou do eixo de bloco de uma container.)align-content alinha as linhas de um container flex quando há espaço extra no eixo cruzado. Ou seja, não tem efeito algum dentro dos itens de uma única linha.*/
@@ -106,6 +106,14 @@ div#q1{
     
     -webkit-border-radius: 12px 12px 12px 12px;
     border-radius: 12px 12px 12px 12px;
+    
+}
+.imglogo{
+    display: flex;
+    margin-top: 10px;
+}
+.cabeçalhoinformaçõespessoais h2{
+    text-align: center;
 }
 .colunasectionobjetivo{
     /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
@@ -129,6 +137,7 @@ section{
     width: 100%;
     margin: 0px;
     margin-top: 0px;
+    flex-flow: column nowrap;
 }
 
 .cabeçalhoinformaçõespessoais{
@@ -203,7 +212,8 @@ section{
 }
 
 .colunasection2 h2{
-    
+    display: block;
+    flex-flow: column nowrap;
     margin: 10px;
 }
 
@@ -211,7 +221,11 @@ section{
     width: 100%;
     margin: 0px;
 }
-
+h2{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px;
+}
 .colunasection3{
     /*Lembrete: estou mexendo dentro do primeiro Box*/
     /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
@@ -235,13 +249,18 @@ section{
 
 .logopequeno{
     display: flex;
-    margin: 8px 5px;
+    margin: 0px 0px;
     justify-content: space-between;
-}
-.conteudo-texto p{
-    margin: 5px 5px;
+    margin-top: 0px;
 }
 
+.conteudo-texto p{
+    display: flex;
+    margin: 5px 5px;
+}
+section{
+    display: flex;
+}
 
 .teste{
 height: 520px;
@@ -407,6 +426,12 @@ figure{
         align-content: center;
         margin: auto;
     }
+    .section{
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-flow: column nowrap;
+    }
   
     .linha {
       display: flex;
@@ -417,13 +442,11 @@ figure{
     }
     .colunasectionExProfi{
         display: flex;
-        flex-flow: column nowrap;
         justify-content: center;
-        align-items: center;
         align-content: center;
         margin: auto;
     }
-
+   
     .colunasection2{
         display: flex;
         justify-content: center;
@@ -431,6 +454,14 @@ figure{
         margin: auto;
     }
     .linha2{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: auto;
+    }
+    .linha{
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
