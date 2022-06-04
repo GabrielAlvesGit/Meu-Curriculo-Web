@@ -145,7 +145,7 @@ section{
     /*display: independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai*/
     display: flex;
     /*Criando Largura e altura para box*/
-    height: 200px; /*Altura*/
+    /*Altura height: 200px;*/
     width: 100%; /*(Largura) sempre vai usar 100%*/
     /*border: Criando uma borda*/
     border: 3px solid #000;
@@ -197,7 +197,7 @@ section{
     /*border: Criando uma borda*/
     border: 2px solid black;
     /*Criando Largura e altura para borda*/
-    height: 250px; /*Altura*/
+     /*Alturaheight: 250px;*/
     width: 100%; /*(Largura) sempre vai usar 100%*/
     flex-flow: column nowrap;
     margin: 1px;
